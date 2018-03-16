@@ -1,6 +1,6 @@
 {
 	"name": "@dwimm/plugin-bahn-de",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "DWIMM Plugin for bahn.de",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"main": "lib/main.js",
@@ -16,7 +16,7 @@
 		"promise-phantom": "^3.1.6"
 	},
 	"devDependencies": {
-		"eslint": "^4.18.0",
+		"eslint": "^4.18.2",
 		"npm-check": "^5.5.2",
 		"nsp": "^3.2.1"
 	}
