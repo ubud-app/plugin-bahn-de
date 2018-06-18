@@ -10,3 +10,5 @@ check_lint:
   script:
     - yarn install
     - yarn run check
+    - yarn run test
+
