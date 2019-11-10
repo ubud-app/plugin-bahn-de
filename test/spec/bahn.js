@@ -12,7 +12,7 @@ describe('Bahn', function () {
 
         process.env.BAHN_FIND.split(',').forEach(find => {
             if(json.indexOf(find) === -1) {
-                throw new Error('Unable to find `' + find + '` in result: ' + json);
+                throw new Error('Unable to find `' + find + '` in result: ' + JSON.stringify(json, null, '  '));
             }
         });
     });
