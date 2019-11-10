@@ -1,6 +1,6 @@
 {
 	"name": "@dwimm/plugin-bahn-de",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "DWIMM Plugin for bahn.de",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"main": "lib/main.js",
