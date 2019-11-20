@@ -1,8 +1,9 @@
 {
 	"name": "@dwimm/plugin-bahn-de",
-	"version": "0.1.2",
-	"description": "DWIMM Plugin for bahn.de",
+	"description": "ubud plugin for bahn.de",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
+	"homepage": "https://github.com/ubud-app/plugin-bahn-de",
+	"license": "MIT",
 	"main": "lib/main.js",
 	"scripts": {
 		"check": "npm run check:eslint && npm run check:npm",
@@ -10,6 +11,9 @@
 		"check:eslint": "eslint ./",
 		"check:npm": "npm-check -s -p",
 		"bump": "jq -M \".version=\\\"$CI_COMMIT_TAG\\\"\" package.json|sponge package.json"
+	},
+	"bugs": {
+		"url": "https://github.com/ubud-app/plugin-bahn-de/issues"
 	},
 	"dependencies": {
 		"phantomjs-prebuilt": "^2.1.16",
@@ -20,5 +24,27 @@
 		"mocha": "^6.2.2",
 		"npm-check": "^5.9.0",
 		"nsp": "^3.2.1"
+	},
+	"peerDependencies": {
+		"@ubud-app/server": "1"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"ubud": {
+		"name": "bunq",
+		"help": "https://github.com/ubud-app/plugin-bunq#-settings",
+		"responsibilities": [
+			{
+				"name": "Deutsche Bahn",
+				"website": "https://bahn.de/",
+				"payee": [
+					"DB Vertrieb GmbH",
+					"DE39DBV00000002177",
+					"DE02100100100152517108"
+				],
+				"metadata": true
+			}
+		]
 	}
 }
