@@ -1,5 +1,5 @@
 {
-	"name": "@dwimm/plugin-bahn-de",
+	"name": "@ubud-app/plugin-bahn-de",
 	"description": "ubud plugin for bahn.de",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"homepage": "https://github.com/ubud-app/plugin-bahn-de",
